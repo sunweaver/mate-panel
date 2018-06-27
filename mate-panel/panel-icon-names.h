@@ -33,6 +33,7 @@
 #define PANEL_ICON_SAVED_SEARCH		"folder-saved-search"
 #define PANEL_ICON_SEARCHTOOL		"system-search"
 #define PANEL_ICON_SHUTDOWN		"system-shutdown"
+#define PANEL_ICON_SUSPEND		"stock_media-pause"
 #define PANEL_ICON_THEME		"preferences-desktop-theme"
 #define PANEL_ICON_TRASH		"user-trash"
 #define PANEL_ICON_UNKNOWN		"image-missing"
