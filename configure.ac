@@ -65,6 +65,7 @@ LIBRSVG_REQUIRED=2.36.2
 GTK_REQUIRED=3.22.0
 LIBWNCK_REQUIRED=3.4.6
 WEATHER_REQUIRED=1.17.0
+RDA_REQUIRED=0.0.3
 
 dnl pkg-config dependency checks
 
@@ -235,7 +236,7 @@ fi
 
 dnl Remote Desktop Awareness
 
-PKG_CHECK_MODULES(RDA, rda, have_rda=yes, have_rda=no)
+PKG_CHECK_MODULES(RDA, rda >= $RDA_REQUIRED, have_rda=yes, have_rda=no)
 if test "x$have_rda" = "xyes"; then
   AC_DEFINE(HAVE_RDA, 1, [Have the Remote Desktop Awareness library])
 fi
